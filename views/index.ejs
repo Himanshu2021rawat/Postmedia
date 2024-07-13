@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postmedia</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-zinc-900 text-white overflow-hidden flex">
+      <div
+        class="w-1/2 h-screen overflow-hidden flex justify-center items-center max-[440px]:hidden"
+      >
+        <img
+          class="object-cover object-center hover:shadow-xl rounded-lg"
+          src="/images/landing.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-1/2 h-screen flex flex-col justify-center bg-blue-300 items-center max-[440px]:w-full"
+      >
+        <h1 class="text-5xl text-blue-800">Sign Up</h1>
+        <form
+          action="/register"
+          method="post"
+          class="w-[30vw] flex flex-col gap-10 py-10 justify-center items-center max-[440px]:text-xl relative"
+        >
+          <div>
+            <label for="Username">Username</label>
+            <input
+              class="w-[30vw] bg-zinc-600 border-none p-3 rounded-lg mt-1 max-[440px]:w-[80vw]"
+              type="text"
+              name="username"
+              id=""
+              placeholder="Username.."
+            />
+          </div>
+          <div>
+            <label for="Name">Name</label>
+            <input
+              class="w-[30vw] border-none bg-zinc-600 p-3 rounded-lg mt-1 max-[440px]:w-[80vw]"
+              type="text"
+              name="name"
+              id=""
+              placeholder="Name.."
+            />
+          </div>
+          <div>
+            <label for="Email">Email</label>
+            <input
+              class="w-[30vw] border-none bg-zinc-600 p-3 rounded-lg mt-1 max-[440px]:w-[80vw]"
+              type="email"
+              name="email"
+              id=""
+              placeholder="Email.."
+            />
+          </div>
+          <div>
+            <label for="Password">Password</label>
+            <input
+              class="w-[30vw] border-none bg-zinc-600 p-3 rounded-lg mt-1 max-[440px]:w-[80vw]"
+              type="password"
+              name="password"
+              id=""
+              placeholder="Password.."
+            />
+          </div>
+          <div>
+            <input
+              class="bg-blue-800 w-[30vw] h-[6vh] rounded-lg text-white hover:cursor-pointer max-[440px]:w-[80vw]"
+              type="submit"
+              value="Sign Up"
+            />
+          </div>
+          <div class="w-full flex justify-center items-center gap-6">
+            <a href="/login" class="text-blue-700 underline underline-offset-2">
+              Already have an account ?
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
